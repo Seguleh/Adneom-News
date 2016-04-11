@@ -23,9 +23,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 
-#gem 'angularjs-rails'
+gem 'angularjs-rails'
 
 gem 'angular-rails-templates'
+
+gem 'angular-ui-router-rails'
 
 gem 'puma'
 

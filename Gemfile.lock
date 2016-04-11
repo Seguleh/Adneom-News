@@ -40,6 +40,8 @@ GEM
       railties (>= 3.1)
       sprockets (~> 2)
       tilt
+    angular-ui-router-rails (0.2.15)
+    angularjs-rails (1.5.0)
     arel (6.0.3)
     autoprefixer-rails (6.3.6)
       execjs
@@ -177,6 +179,8 @@ PLATFORMS
 
 DEPENDENCIES
   angular-rails-templates
+  angular-ui-router-rails
+  angularjs-rails
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
