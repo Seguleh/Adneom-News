@@ -39,6 +39,8 @@ gem 'haml-rails'
 
 gem 'sprockets', '2.12.3'
 
+gem 'angular_rails_csrf'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
