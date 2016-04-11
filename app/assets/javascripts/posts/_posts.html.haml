@@ -1,22 +1,22 @@
 %script{:id => "/posts.html", :type => "text/ng-template"}
-      .page-header
-        %h3
-          %a{:href => "{{post.link}}", "ng-show" => "post.link"}
-            {{post.title}}
+  .page-header
+    %h3
+      %a{:href => "{{post.link}}", "ng-show" => "post.link"}
+        {{post.title}}
 
-      %div{"ng-repeat" => "comment in post.comments | orderBy:'-upvotes'"}
+  %div{"ng-repeat" => "comment in post.comments | orderBy:'-upvotes'"}
 
-        %span.glyphicon.glyphicon-thumbs-up{"ng-click" => "incrementUpvotes(comment)"}
+    %span.glyphicon.glyphicon-thumbs-up{"ng-click" => "incrementUpvotes(comment)"}
 
-        Votes: {{comment.upvotes}} - by {{comment.author}}
+    Votes: {{comment.upvotes}} - by {{comment.author}}
 
-        %span.comment-it
-          {{comment.body}}
+    %span.comment-it
+      {{comment.body}}
 
-      %form.top-spacer{"ng-submit" => "addComment()"}
-        %h3 New Comment
+  %form.top-spacer{"ng-submit" => "addComment()"}
+    %h3 New Comment
 
-        .form-group
-          %input.form-control{"ng-model" => "body", :placeholder => "Comment", :type => "text"}
+    .form-group
+      %input.form-control{"ng-model" => "body", :placeholder => "Comment", :type => "text"}
 
-        %button.btn.btn-primary{:type => "submit"} Comment it!
+    %button.btn.btn-primary{:type => "submit"} Comment it!
