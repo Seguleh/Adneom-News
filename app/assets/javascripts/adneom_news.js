@@ -1,8 +1,10 @@
 angular.module('AdneomNews', ['ui.router'])
 
 .config([
+  
 '$stateProvider',
 '$urlRouterProvider',
+
 function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
@@ -20,4 +22,4 @@ function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('home');
 
-}]);
+}])
