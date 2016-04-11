@@ -1,4 +1,4 @@
-angular.module('AdneomNews', ['ui.router'])
+angular.module('AdneomNews', ['ui.router', 'templates'])
 
 .config([
   
