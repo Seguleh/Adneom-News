@@ -7,9 +7,9 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: d15g70g26opoda
-  username: tqoeawghdybacn
-  password: HR6Q6aQVGzmmx_IAdmGJTCcD1k
+  database: d1994kqe356bm4
+  username: mlhjypvfrusjov
+  password: aB6udKc1gPEo5e8nInAhu3tTRK
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
