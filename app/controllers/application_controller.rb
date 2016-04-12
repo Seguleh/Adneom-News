@@ -5,10 +5,18 @@ class ApplicationController < ActionController::Base
 
   respond_to :json
 
-  after_filter { flash.discard if request.xhr? }, only: :show
+  after_filter clear_flash
 
   def index
   	render 'layouts/application'
   end
+
+  def clear_flash
+
+	  if request.xhr?
+
+	    flash.discard
+	  end
+end
 
 end
