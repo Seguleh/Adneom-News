@@ -4,7 +4,7 @@ angular.module('AdneomNews')
 
 	'$scope','posts',
 
-	function($scope){
+	function($scope, posts){
 
 		$scope.posts = posts.posts;
 	
