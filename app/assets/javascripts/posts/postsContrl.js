@@ -10,8 +10,8 @@ angular.module('AdneomNews')
 
 		$scope.addComment = function() {
 
-		  if($scope.body === '') { alert("Body can't be blank"); return; }
-		  if($scope.author === '') { alert("Author can't be blank"); return; }
+		  //if($scope.body === '') { alert("Body can't be blank"); return; }
+		  //if($scope.author === '') { alert("Author can't be blank"); return; }
 
 		  posts.createComment(post.id, {
 

@@ -6,14 +6,6 @@ class CommentsController < ApplicationController
 
 		comment = post.comments.create(comment_params)
 
-		@comment = post.comments.create(comment_params)
-
-		if @comment
-	  		flash[:success] = "You have successfully entered a new comment!"
-	  	else
-	  		flash[:alert] = "Please don't leave anything empty!"
-	  	end
-
 		respond_with post, comment
 	end
 
