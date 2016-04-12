@@ -11,12 +11,12 @@ angular.module('AdneomNews')
 		$scope.addComment = function() {
 
 		  if(!$scope.body || $scope.body === '') { return; }
-		  if(!$scope.author || $scope.author === '') { return; }
+		  //if(!$scope.author || $scope.author === '') { return; }
 
 		  posts.addComment(post.id, {
 
 		    body: $scope.body,
-		    author: $scope.author,
+		    //author: $scope.author,
 		    upvotes: 0
 
 		  }).success(function(comment) {
@@ -26,7 +26,7 @@ angular.module('AdneomNews')
 		  });
 
 		  $scope.body = '';
-		  $scope.author = '';
+		  //$scope.author = '';
 
 		};
 
@@ -35,5 +35,4 @@ angular.module('AdneomNews')
 		  posts.upvoteComment(post, comment);
 
 		};
-	
 }]);
