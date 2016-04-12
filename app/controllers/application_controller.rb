@@ -5,16 +5,8 @@ class ApplicationController < ActionController::Base
 
   respond_to :json
 
-  after_filter :clear_flash
-
   def index
   	render 'layouts/application'
-  end
-
-  def clear_flash
-  	respond_to do |format|
-  		format.js { render :js => "clear_msg();" }
-  	end
   end
 
 end
