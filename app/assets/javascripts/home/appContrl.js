@@ -10,8 +10,8 @@ angular.module('AdneomNews')
 	
 		$scope.addPost = function(){
 
-			if(!$scope.title || $scope.title === '') {$("#notice").append("<div id='alert' class='alert alert-danger'>The Title field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); });  return; }
-			if(!$scope.link || $scope.link === '') {$("#notice").append("<div id='alert' class='alert alert-danger'>The Link field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); });  return; }
+			if(!$scope.title || $scope.title === '') {$("#notice").append("<div id='alert' class='alert alert-danger'>The Title field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); }); $(this).css({"display": "block", "opacity": "1"}); return; }
+			if(!$scope.link || $scope.link === '') {$("#notice").append("<div id='alert' class='alert alert-danger'>The Link field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); }); $(this).css({"display": "block", "opacity": "1"}); return; }
 
 		  	posts.create({
 
@@ -20,7 +20,7 @@ angular.module('AdneomNews')
 
 		  	}).success(function (){
 
-		  		$("#notice").append("<div id='alert' class='alert alert-success'>Post created successfully!<div>").fadeOut(3000, function() { $("#alert").remove(); });
+		  		$("#notice").append("<div id='alert' class='alert alert-success'>Post created successfully!<div>").fadeOut(3000, function() { $("#alert").remove(); $(this).css({"display": "block", "opacity": "1"}); });
 
 		  	});
 
