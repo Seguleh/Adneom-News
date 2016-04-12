@@ -11,8 +11,11 @@
     %a{"ng-href" => "{{post.link}}", :target => "_blank"}
       {{post.title}}
 
+  %span |
+
   %span
-    %a{:href => "#/posts/{{post.id}}"} | Comments
+    %a{:href => "#/posts/{{post.id}}"}
+      Comments
 
 %form.top-spacer{"ng-submit" => "addPost()"}
 

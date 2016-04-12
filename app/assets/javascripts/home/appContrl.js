@@ -8,7 +8,6 @@ angular.module('AdneomNews')
 
 		$scope.posts = posts.posts;
 	
-
 		$scope.addPost = function(){
 
 			if(!$scope.title || $scope.title === '') { return; }

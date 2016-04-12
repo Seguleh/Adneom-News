@@ -8,7 +8,7 @@ angular.module('AdneomNews')
 
 		$scope.post = post;
 
-		$scope.addComment = function(){
+		$scope.addComment = function() {
 
 		  if(!$scope.body || $scope.body === '') { return; }
 		  if(!$scope.author || $scope.author === '') { return; }
