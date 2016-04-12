@@ -8,7 +8,7 @@
   {{post.upvotes}}  -
 
   %span.post-it
-    %a{"ng-click" => "externalLink(post.link)", :target => "_blank"}
+    %a{"ng-href" => "{{post.link}})", :target => "_blank"}
       {{post.title}}
 
   %span
@@ -17,6 +17,8 @@
   %span
     %a{:href => "#/posts/{{post.id}}"}
       Comments
+
+.line-spacing
 
 %form.top-spacer{"ng-submit" => "addPost()"}
 

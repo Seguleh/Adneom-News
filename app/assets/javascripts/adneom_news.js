@@ -31,10 +31,4 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
       });
 
     $urlRouterProvider.otherwise('home')
-}])
-
-.directive('externalLink', function() {
-
-  $window.open(post.link)
-
-});
+}]);
