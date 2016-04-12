@@ -8,7 +8,7 @@
   Votes: {{post.upvotes}}
 
   %span.post-it
-    %a{:href => "{{post.link}}", "ng-show" => "post.link"}
+    %a{"ui-sref" => "{{post.link}}"}
       {{post.title}}
 
   %span
