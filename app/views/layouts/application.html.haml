@@ -6,5 +6,17 @@
     = csrf_meta_tags
 
   %body{"ng-app" => "AdneomNews"}
+
     = render 'layouts/header'
-    = yield
+
+    .row
+      .col-md-6.col-md-offset-3
+        %ui-view
+
+    %footer
+      %small
+        ADNEOM News - 2016
+      %nav
+        %ul
+          %li
+            %a{ :href => "http://www.adneom.com/"} ADNEOM
