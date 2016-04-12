@@ -2,7 +2,7 @@
   %h2 
     Comments Feed
     
-  %a{"ng-click" => "open({{post.link}})", :target => "_blank"}
+  %a{"ng-click" => "externalLink(post.link)", :target => "_blank"}
     {{post.title}}
 
 %div{"ng-repeat" => "comment in post.comments | orderBy:'-upvotes'"}
@@ -20,6 +20,6 @@
   .form-group
     %input.form-control{"ng-model" => "body", :placeholder => "Comment", :type => "text"}
 
-    / %input.form-control{"ng-model" => "author", :placeholder => "Author", :type => "text"}
+    %input.form-control{"ng-model" => "author", :placeholder => "Author", :type => "text"}
 
   %button.btn.btn-primary{:type => "submit"} Comment it!

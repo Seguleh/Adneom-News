@@ -35,6 +35,6 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
 
 .directive('externalLink', function() {
 
-  $window.open(ng-href)
+  $window.open(post.link)
 
 });

@@ -11,13 +11,12 @@ angular.module('AdneomNews')
 		$scope.addComment = function() {
 
 		  if($scope.body === '') { return; }
-		  //if($scope.author === '') { return; }
+		  if($scope.author === '') { return; }
 
 		  posts.addComment(post.id, {
 
 		    body: $scope.body,
-		    author: 'Anon'
-		    //author: $scope.author,
+		    author: $scope.author
 
 		  }).success(function(comment) {
 
@@ -26,7 +25,7 @@ angular.module('AdneomNews')
 		  });
 
 		  $scope.body = '';
-		  //$scope.author = '';
+		  $scope.author = '';
 
 		};
 
