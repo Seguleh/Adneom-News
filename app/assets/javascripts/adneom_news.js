@@ -10,7 +10,7 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
     $stateProvider
       .state('home', {
         url: '/home',
-        templateUrl: 'home/_home.html',
+        templateUrl: 'templates/_home.html',
         controller: 'AppContrl',
         resolve: {
           postPromise: ['posts', function(posts){
@@ -21,7 +21,7 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
 
       .state('posts', {
         url: '/posts/{id}',
-        templateUrl: 'posts/_posts.html',
+        templateUrl: 'templates/_posts.html',
         controller: 'PostsContrl',
         resolve: {
           post: ['$stateParams', 'posts', function($stateParams, posts) {
