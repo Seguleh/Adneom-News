@@ -1,3 +1,5 @@
+angular.module('AdneomNews')
+
 .controller('AppContrl', [
 
 	'$scope','posts',

@@ -1,4 +1,6 @@
-controller('PostsContrl', [
+angular.module('AdneomNews')
+
+.controller('PostsContrl', [
 
 	'$scope','posts','post',
 
