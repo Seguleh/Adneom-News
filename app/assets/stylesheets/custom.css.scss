@@ -210,6 +210,12 @@ input {
   color: #000;
 }
 
+.btn-primary:active {
+  background-color: #E0004D;
+  border-color: #C60045;
+  color: #FFF;
+}
+
 #error_explanation {
   color: red;
   ul {
