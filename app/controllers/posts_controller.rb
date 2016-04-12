@@ -7,10 +7,6 @@ class PostsController < ApplicationController
 
 	def create
 
-		flash[:success] = "The post was created successfully!" if post_params
-
-		flash[:notice] = "The post was not created" if !post_params
-
 		respond_with Post.create(post_params)
 	end
 
