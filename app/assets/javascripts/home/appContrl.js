@@ -16,8 +16,7 @@ angular.module('AdneomNews')
 		  	posts.create({
 
 		  		title: $scope.title, 
-		  		link: $scope.link,
-		  		upvotes: 0,
+		  		link: $scope.link
 
 		  	});
 

@@ -10,14 +10,14 @@ angular.module('AdneomNews')
 
 		$scope.addComment = function() {
 
-		  if(!$scope.body || $scope.body === '') { return; }
-		  //if(!$scope.author || $scope.author === '') { return; }
+		  if($scope.body === '') { return; }
+		  //if($scope.author === '') { return; }
 
 		  posts.addComment(post.id, {
 
 		    body: $scope.body,
+		    author: 'Anon'
 		    //author: $scope.author,
-		    upvotes: 0
 
 		  }).success(function(comment) {
 
