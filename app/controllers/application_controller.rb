@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   respond_to :json
 
+  after_filter { flash.discard if request.xhr? }, only: :show
+
   def index
   	render 'layouts/application'
   end
