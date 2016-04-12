@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   respond_to :json
 
-  after_filter clear_flash
+  after_filter :clear_flash
 
   def index
   	render 'layouts/application'
