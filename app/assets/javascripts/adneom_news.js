@@ -15,7 +15,7 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
         resolve: {
           postPromise: ['posts', function(posts){
               return posts.getAll();
-            }]
+          }]
         }
       })
 
