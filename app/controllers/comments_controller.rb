@@ -6,6 +6,10 @@ class CommentsController < ApplicationController
 
 		comment = post.comments.create(comment_params)
 
+		flash[:success] = "The comment was created successfully!" if !request.xhr?
+
+		flash[:notice] = "The comment was not created" if request.xhr?
+
 		respond_with post, comment
 	end
 
