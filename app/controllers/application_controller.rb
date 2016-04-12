@@ -12,11 +12,9 @@ class ApplicationController < ActionController::Base
   end
 
   def clear_flash
-
-	  if request.xhr?
-
-	    flash.discard
-	  end
-end
+  	respond_to do |format|
+  		format.js { render :js => "$(#notice).remove;" }
+  	end
+  end
 
 end

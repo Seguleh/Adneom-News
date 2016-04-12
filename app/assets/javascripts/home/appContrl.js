@@ -10,8 +10,8 @@ angular.module('AdneomNews')
 	
 		$scope.addPost = function(){
 
-			if(!$scope.title || $scope.title === '') {$("#notice").html("<%= flash[:notice] = Title field can't be empty %>");  return; }
-			if(!$scope.link || $scope.link === '') {$("#notice").html("<%= flash[:notice] = Link field can't be empty %>");  return; }
+			if(!$scope.title || $scope.title === '') {$("#notice").html("<div class='alert alert-danger'>The Title field can't be empty<div>");  return; }
+			if(!$scope.link || $scope.link === '') {$("#notice").html("<div class='alert alert-danger'>The Link field can't be empty<div>");  return; }
 
 		  	posts.create({
 
