@@ -17,8 +17,7 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
               return posts.getAll();
             }]
         }
-      })
-      .state('posts', {
+      }).state('posts', {
         url: '/posts/{id}',
         templateUrl: '_posts.html.haml',
         controller: 'PostsContrl',
