@@ -9,9 +9,9 @@
   %body{"ng-app" => "AdneomNews"}
 
     = render 'layouts/header'
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          %ui-view
 
-    .row
-      .col-md-6.col-md-offset-3
-        %ui-view
-
-    = render 'layouts/footer'
+      = render 'layouts/footer'
