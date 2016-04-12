@@ -5,14 +5,14 @@
 
   %span.glyphicon.glyphicon-thumbs-up.cursor-pointer{"ng-click" => "incrementUpvotes(post)"}
 
-  Votes: {{post.upvotes}}
+  {{post.upvotes}} -
 
   %span.post-it
     %a{"ng-href" => "{{post.link}}", :target => "_blank"}
       {{post.title}}
 
   %span
-    %a{:href => "#/posts/{{post.id}}"} Comments
+    %a{:href => "#/posts/{{post.id}}"} | Comments
 
 %form.top-spacer{"ng-submit" => "addPost()"}
 
