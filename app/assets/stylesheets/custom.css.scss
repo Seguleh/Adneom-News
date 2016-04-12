@@ -210,7 +210,7 @@ input {
   color: #000;
 }
 
-.btn-primary:active {
+.btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
   background-color: #E0004D;
   border-color: #C60045;
   color: #FFF;
