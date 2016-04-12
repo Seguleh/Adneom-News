@@ -1,6 +1,6 @@
 .page-header
   %h3
-    %a{"ng-href" => "{{post.link}}"}
+    %a{"ng-href" => "{{post.link}}", :target => "_blank"}
       {{post.title}}
 
 %div{"ng-repeat" => "comment in post.comments | orderBy:'-upvotes'"}

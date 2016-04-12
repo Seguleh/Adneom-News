@@ -31,7 +31,9 @@ angular.module('AdneomNews')
 		};
 
 		$scope.incrementUpvotes = function(comment){
+
 		  posts.upvoteComment(post, comment);
+		  
 		};
 	
 }]);

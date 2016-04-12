@@ -11,10 +11,10 @@ angular.module('AdneomNews')
 
 		$scope.addPost = function(){
 
-			if(!$scope.title || $scope.title == '') { return; }
-			if(!$scope.link || $scope.link == '') { return; }
+			if($scope.title == '') { return; }
+			if($scope.link == '') { return; }
 
-		  	$posts.create({
+		  	posts.create({
 
 		  		title: $scope.title, 
 		  		link: $scope.link,
