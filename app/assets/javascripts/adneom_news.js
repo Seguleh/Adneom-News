@@ -18,7 +18,6 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
             }]
         }
       })
-
       .state('posts', {
         url: '/posts/{id}',
         templateUrl: '_posts.html.haml',
@@ -29,6 +28,6 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
           }]
         }
       });
-      
+
     $urlRouterProvider.otherwise('home')
 }]);
