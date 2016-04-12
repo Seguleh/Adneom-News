@@ -199,8 +199,15 @@ input {
 }
 
 .btn-primary {
-  background-color: #FFDC4C;
+  background-color: #FFDB32;
   border-color: #F9C700;
+  color: #000;
+}
+
+.btn-primary :hover {
+  background-color: #E5B700;
+  border-color: #B28B00;
+  color: #000;
 }
 
 #error_explanation {
