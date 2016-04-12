@@ -10,8 +10,8 @@ angular.module('AdneomNews')
 	
 		$scope.addPost = function(){
 
-			if(!$scope.title || $scope.title === '') {$("#notice").append("<div class='alert alert-danger'>The Title field can't be empty<div>").fadeOut(3000, function() { $(this).remove(); };);  return; }
-			if(!$scope.link || $scope.link === '') {$("#notice").append("<div class='alert alert-danger'>The Link field can't be empty<div>").fadeOut(3000, function() { $(this).remove(); };);  return; }
+			if(!$scope.title || $scope.title === '') {$("#notice").append("<div class='alert alert-danger'>The Title field can't be empty<div>").fadeOut(3000, function() { $(this).remove(); });  return; }
+			if(!$scope.link || $scope.link === '') {$("#notice").append("<div class='alert alert-danger'>The Link field can't be empty<div>").fadeOut(3000, function() { $(this).remove(); });  return; }
 
 		  	posts.create({
 
@@ -20,7 +20,7 @@ angular.module('AdneomNews')
 
 		  	}).success(function (){
 
-		  		$("#notice").append("<div class='alert alert-success'>Post created successfully!<div>").fadeOut(3000, function() { $(this).remove(); };);
+		  		$("#notice").append("<div class='alert alert-success'>Post created successfully!<div>").fadeOut(3000, function() { $(this).remove(); });
 
 		  	});
 
