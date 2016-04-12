@@ -4,5 +4,3 @@
 //= require angular-rails-templates
 //= require angular-ui-router
 //= require_tree .
-//= require_tree ./home
-//= require_tree ./posts
