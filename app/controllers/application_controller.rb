@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
 
   def clear_flash
   	respond_to do |format|
-  		format.js { render :js => "$(#notice).remove;" }
+  		format.js { render :js => "clear_msg();" }
   	end
   end
 

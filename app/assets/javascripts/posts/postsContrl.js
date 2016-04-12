@@ -10,8 +10,8 @@ angular.module('AdneomNews')
 
 		$scope.addComment = function() {
 
-		  if($scope.body === '') { $("#notice").html("<div class='alert alert-danger'>The Body field can't be empty<div>"); return; }
-		  if($scope.author === '') { $("#notice").html("<div class='alert alert-danger'>The Author field can't be empty<div>"); return; }
+		  if($scope.body === '') { $("#notice").append("<div class='alert alert-danger'>The Body field can't be empty<div>"); return; }
+		  if($scope.author === '') { $("#notice").append("<div class='alert alert-danger'>The Author field can't be empty<div>"); return; }
 
 		  posts.createComment(post.id, {
 
