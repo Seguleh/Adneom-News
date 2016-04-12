@@ -5,7 +5,7 @@
 
 %div{"ng-repeat" => "comment in post.comments | orderBy:'-upvotes'"}
 
-  %span.glyphicon.glyphicon-thumbs-up{"ng-click" => "incrementUpvotes(comment)"}
+  %span.glyphicon.glyphicon-thumbs-up.cursor-pointer{"ng-click" => "incrementUpvotes(comment)"}
 
   Votes: {{comment.upvotes}} - by {{comment.author}}
 
