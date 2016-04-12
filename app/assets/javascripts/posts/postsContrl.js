@@ -12,7 +12,7 @@ angular.module('AdneomNews')
 
 		  $("#notice").css({"display": "block", "opacity": "1"});
 
-		  if($scope.body === '') { $("#notice").append("<div id='alert' class='alert alert-danger'>The Body field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); }); return; }
+		  if($scope.body === '') { $("#notice").append("<div id='alert' class='alert alert-danger'>The Comment field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); }); return; }
 		  if($scope.author === '') { $("#notice").append("<div id='alert' class='alert alert-danger'>The Author field can't be empty<div>").fadeOut(3000, function() { $("#alert").remove(); }); return; }
 
 		  posts.createComment(post.id, {
