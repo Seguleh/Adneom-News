@@ -31,7 +31,7 @@ angular.module('AdneomNews')
 	  });
 	};
 
-	o.addComment = function(id, comment) {
+	o.createComment = function(id, comment) {
 	  return $http.post('/posts/' + id + '/comments.json', comment);
 	};
 

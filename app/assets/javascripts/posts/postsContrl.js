@@ -4,7 +4,7 @@ angular.module('AdneomNews')
 
 	'$scope','posts','post',
 
-	function($scope, post, posts){
+	function($scope, posts, post){
 
 		$scope.post = post;
 
@@ -13,7 +13,7 @@ angular.module('AdneomNews')
 		  if($scope.body === '') { return; }
 		  if($scope.author === '') { return; }
 
-		  posts.addComment(post.id, {
+		  posts.createComment(post.id, {
 
 		    body: $scope.body,
 		    author: $scope.author
