@@ -24,9 +24,5 @@ module AdneomNews
     config.active_record.raise_in_transactional_callbacks = true
 
     config.angular_templates.markups = %w(erb haml)
-
-    config.assets.paths = Rails.root.join("vendor","assets","bower_components")
-
-    config.assets.precompile = %r(.*.(?:eot|svg|ttf|woff|woff2)$)
   end
 end
