@@ -32,7 +32,3 @@ angular.module('AdneomNews', ['ui.router', 'templates'])
 
     $urlRouterProvider.otherwise('home')
 }]);
-
-// $( document ).ready(function() {
-//     $(#notice).remove;
-// });

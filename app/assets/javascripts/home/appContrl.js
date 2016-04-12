@@ -10,13 +10,17 @@ angular.module('AdneomNews')
 	
 		$scope.addPost = function(){
 
-			if(!$scope.title || $scope.title === '') {$("#notice").append("<div class='alert alert-danger'>The Title field can't be empty<div>");  return; }
-			if(!$scope.link || $scope.link === '') {$("#notice").append("<div class='alert alert-danger'>The Link field can't be empty<div>");  return; }
+			if(!$scope.title || $scope.title === '') {$("#notice").append("<div class='alert alert-danger'>The Title field can't be empty<div>").fadeOut(3000);  return; }
+			if(!$scope.link || $scope.link === '') {$("#notice").append("<div class='alert alert-danger'>The Link field can't be empty<div>").fadeOut(3000);  return; }
 
 		  	posts.create({
 
 		  		title: $scope.title, 
 		  		link: $scope.link
+
+		  	}).success(function (){
+
+		  		$("#notice").append("<div class='alert alert-success'>Post created successfully!<div>").fadeOut(3000);
 
 		  	});
 
